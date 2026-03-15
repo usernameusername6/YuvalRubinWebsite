@@ -17,9 +17,18 @@
 				
 		</section>
 			
-		<nav class="main_nav">   	
-			<a href="Default.aspx">home</a>
-			<a href="70s.aspx">the 70s</a>				
+		<nav class="main_nav">
+			<img src="images/wrc-logo-png-transparent.png" width="150" />
+			<p>|</p>
+			<a href="Default.aspx">Home</a>
+			<p>|</p>
+			<a href="70s.aspx">The 70s</a>
+			<p>|</p>
+			<a href="80s.aspx">The 80s</a>
+			<p>|</p>
+			<a href="90s.aspx">The 80s</a>
+			<p>|</p>
+			<a href="present.aspx">The Present</a>
 		</nav>
 	</header>
 		

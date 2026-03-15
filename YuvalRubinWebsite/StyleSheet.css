@@ -2,37 +2,48 @@
     direction: rtl;
 }
 
-header, .center, footer {
+.center, footer {
     min-height: 80px;
-    border: 2px solid blue;
+    border: 2px solid darkorange;
 }
 
 header {
-    background-color: white;
-    margin-bottom: 5px;
-    
 }
 
 .header_top {
-    min-height: 20px;
-    display: flex;
-
 }
 
 
 
 .main_nav {
-    background-color: lightgray;
+    background-color: darkorange;
     min-height: 30px;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: 20px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
 }
+    
+    .main_nav img {
+        margin-right: 70px;
+        margin-left: 70px;
+    }
+
+    .main_nav p {
+        font-size: 100px;
+        margin: 5px 30px;
+        margin-bottom: 15px;
+        color: orangered;
+    }
 
     .main_nav a {
         text-decoration: none;
-        font-size: 24px;
-        color: darkblue;
-        margin: 10px;
+        font-size: 35px;
+        color: black;
+        margin: 30px;
+
     }
 
 
@@ -47,20 +58,20 @@ main, aside {
 }
 
 main {
-    background-color: darkblue;
+    background-color: white;
     flex: 4;
-    color: white;
+    color: black;
     padding: 5px 10px;
 }
 
 
 aside {
-    background-color: gray;
+    background-color: whitesmoke;
     flex: 1;
     padding: 5px;
     text-align: center;
 }
 
 footer {
-    background-color: orange;
+    background-color: darkorange;
 }
