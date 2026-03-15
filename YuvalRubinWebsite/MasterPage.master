@@ -18,8 +18,8 @@
 		</section>
 			
 		<nav class="main_nav">   	
-			<a href="Default.aspx">דף בית</a>
-			<a href="Page1.aspx">דף 1</a>				
+			<a href="Default.aspx">home</a>
+			<a href="70s.aspx">the 70s</a>				
 		</nav>
 	</header>
 		

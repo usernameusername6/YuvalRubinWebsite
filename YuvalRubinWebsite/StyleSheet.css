@@ -10,11 +10,13 @@ header, .center, footer {
 header {
     background-color: white;
     margin-bottom: 5px;
+    
 }
 
 .header_top {
     min-height: 20px;
     display: flex;
+
 }
 
 
