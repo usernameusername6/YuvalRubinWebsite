@@ -18,7 +18,7 @@
 		</section>
 			
 		<nav class="main_nav">
-			<img src="images/wrc-logo-png-transparent.png" width="150" />
+			<img src="images/logo.png" width="150" />
 			<p>|</p>
 			<a href="Default.aspx">Home</a>
 			<p>|</p>
@@ -44,7 +44,7 @@
 	</section>
 			
 	<footer>
-			תוכן אזור תחתון
+			<a href="https://www.wrc.com" target="_blank">Official WRC site</a>
 	</footer>
     </form>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
