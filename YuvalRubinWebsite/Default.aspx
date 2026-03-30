@@ -26,11 +26,12 @@
     <h3>Drivers Championship</h3>
     <p>The Drivers Championship is awarded to the individual driver who earns the most points over all the rallies in a season. Points are given based on finishing positions in each rally, and extra points can be
         earned on the Power Stage, which is the final stage of the rally. This championship shows who is the best driver over the whole year, not just in one event.</p>
-    <img src="images/calbrate.jpg" width="450px"/>
+    <img src="images/calbrate.jpg" width="450"/>
     <h3>The Manufacturers Championship</h3>
     <p>The Manufacturers Championship is for the car teams, or manufacturers, like Ford, Toyota, or Hyundai. Points are earned based on the results of the top-performing cars from each team in every rally. This 
         competition rewards the team that builds the most reliable and fastest cars throughout the season. Both championships run at the same time, so a driver could win the Drivers Championship while their 
         manufacturer might still be competing for the Manufacturers title.</p>
+    <a href="https://en.wikipedia.org/wiki/World_Rally_Championship" target="_blank">For more information about the WRC</a>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
 </asp:Content>

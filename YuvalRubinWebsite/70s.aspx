@@ -21,6 +21,7 @@
         which gave it both speed and a unique sound. Driven by champions like Sandro Munari, the Stratos proved to be extremely successful and hard to beat. It went on to win three consecutive 
         manufacturers’ titles from 1974 to 1976, showing just how dominant it was during that era, and it became one of the most iconic and recognizable rally cars ever built.
     </p>
+    <a href="https://en.wikipedia.org/wiki/Lancia_Stratos" target="_blank">For more information about the LANVIA STRATOS</a>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
