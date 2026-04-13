@@ -14,7 +14,7 @@
     <form id="form1" runat="server">
     <header>
 		<section class="header_top">				
-				
+
 		</section>
 			
 		<nav class="main_nav">
@@ -34,7 +34,10 @@
 		
 	<section class="center">
 		<aside>
-				תוכן אזור צד
+			<section class="aside_date">
+				<asp:Label ID="DateLabel" runat="server"></asp:Label>
+				<asp:Image ID="DayImage" runat="server"/>
+			</section>
 		</aside>
 			
 		<main>
