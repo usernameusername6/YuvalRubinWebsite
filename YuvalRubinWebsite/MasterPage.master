@@ -38,6 +38,9 @@
 				<asp:Label ID="DateLabel" runat="server"></asp:Label>
 				<asp:Image ID="DayImage" runat="server"/>
 			</section>
+
+			<asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
+    </asp:ContentPlaceHolder>
 		</aside>
 			
 		<main>

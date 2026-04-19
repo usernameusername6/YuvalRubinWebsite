@@ -26,6 +26,7 @@ header {
     margin-top: 0px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+
 }
     
     .main_nav img {
@@ -50,7 +51,7 @@ header {
 
 
 .center {
-    background-color: lime;
+    background-color: whitesmoke;
     margin-bottom: 5px;
     display: flex;
     border-bottom-left-radius: 15px;
@@ -131,9 +132,9 @@ footer {
     }
 
 figure {
-    display: inline-block; /* Keeps the figure only as wide as the image */
-    margin: 15px; /* Adds space around the whole group */
-    text-align: center; /* Centers the caption under the image */
+    display: inline-block;
+    margin: 15px;
+    text-align: center; 
 }
 
 figcaption {
@@ -148,4 +149,45 @@ figure img {
     display: block;
     max-width: 100%;
     width: 600px;
+}
+
+
+.page-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.page-nav li {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 3px solid #ddd;
+}
+
+    .page-nav li:last-child {
+        border-bottom: none;
+    }
+
+.page-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 25px;
+    display: block;
+}
+
+    .page-nav a:hover {
+        color: #ff0000;
+    }
+
+
+aside {
+    position: sticky;
+    top: 10px;
+    height: fit-content;
+}
+
+html {
+    scroll-behavior: smooth;
 }

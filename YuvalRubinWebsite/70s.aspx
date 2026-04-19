@@ -5,7 +5,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
     <h1>The 70s</h1>
-    <h2>The Beginning</h2>
+    <h2 id="beginning">The Beginning</h2>
     <h3>Of the league</h3>
     <figure>
         <img src="images/ALPINE.jpg"/>
@@ -16,7 +16,7 @@
         gravel, and rough, uneven roads in different parts of the world, making each rally unique and challenging. Major manufacturers such as Ford Motor Company, Fiat, and Alpine competed in famous 
         events like the Monte Carlo Rally and the Safari Rally. These tough and demanding races helped establish rally racing as one of the hardest and most extreme forms of motorsport in the world. But one team dominated this era:
 </p>
-    <h2>LANCIA</h2>
+    <h2 id="lancia">LANCIA</h2>
     <h3> And the Stratos HF</h3>
     <figure>
         <img src="images/stratos.jpg"/>
@@ -43,7 +43,7 @@
         <a href="https://en.wikipedia.org/wiki/Lancia_Stratos" target="_blank">For more information about the LANCIA STRATOS</a>
   
   
-  <h2>The Drivers</h2>
+  <h2 id="drivers">The Drivers</h2>
   <h3>Heroes of the early years</h3>
     <figure>
         <img src="images/Sandro%20Munari.png" />
@@ -62,5 +62,16 @@
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
+</asp:Content>
+
+<asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+    <div class="page-nav">
+        <h1>Home</h1>
+        <ul>
+            <li><a href="#beginning">The Beginning</a></li>
+            <li><a href="#lancia">LANCIA</a></li>
+            <li><a href="#drivers">The Drivers</a></li>
+        </ul>
+    </div>
 </asp:Content>
 

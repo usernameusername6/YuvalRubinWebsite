@@ -3,7 +3,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderMain" Runat="Server">
-    <h1>About the WRC</h1>
+    <h1 id="wrc">About the WRC</h1>
     <p>    The World Rally Championship (WRC) is the highest level of international rally racing and is considered the top competition in this type of motorsport. It is a global championship 
         organized by the FIA, which is the same organization that also runs Formula One and other major racing series. Unlike track racing, where cars drive on a closed circuit, WRC events take 
         place on closed public roads. These races are held in different countries around the world, on a wide variety of surfaces like gravel, asphalt, snow, and dirt, making each event unique and challenging.</p>
@@ -22,7 +22,7 @@
         <figcaption>Hyundai I20N</figcaption>
     </figure>
 
-    <h2>Rallying</h2>
+    <h2 id="rallying">Rallying</h2>
     <h3>What is it?</h3>
     <p>Rally is a type of motorsport where drivers race cars on real roads instead of a closed track. These roads are closed to the public during the race and can be on different surfaces like gravel, dirt, snow,
         or asphalt. Unlike normal racing, cars don’t race side by side. Instead, they start one at a time and try to complete each section of the road as fast as possible.
@@ -34,7 +34,7 @@
         <figcaption>Ford Focus RS</figcaption>
     </figure>
 
-    <h2>The Championships</h2>
+    <h2 id="championships">The Championships</h2>
     <h3>Drivers Championship</h3>
     <p>The Drivers Championship is awarded to the individual driver who earns the most points over all the rallies in a season. Points are given based on finishing positions in each rally, and extra points can be
         earned on the Power Stage, which is the final stage of the rally. This championship shows who is the best driver over the whole year, not just in one event.</p>
@@ -49,6 +49,17 @@
         manufacturer might still be competing for the Manufacturers title.</p>
     <a href="https://en.wikipedia.org/wiki/World_Rally_Championship" target="_blank">For more information about the WRC</a>
 </asp:Content>
+
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">
 </asp:Content>
 
+<asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
+    <div class="page-nav">
+        <h1>Home</h1>
+        <ul>
+            <li><a href="#wrc">About the WRC</a></li>
+            <li><a href="#rallying">What is Rallying?</a></li>
+            <li><a href="#championships">The Championships</a></li>
+        </ul>
+    </div>
+</asp:Content>
