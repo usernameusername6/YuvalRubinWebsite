@@ -46,7 +46,11 @@ header {
         font-size: 35px;
         color: black;
         margin: 30px;
-
+        transition: color 0.3s;
+        display: block;
+    }
+    .main_nav a:hover {
+        color: #ff0000;
     }
 
 

@@ -66,7 +66,7 @@
 
 <asp:Content ID="ContentAside" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
     <div class="page-nav">
-        <h1>Home</h1>
+        <h1>The 70S</h1>
         <ul>
             <li><a href="#beginning">The Beginning</a></li>
             <li><a href="#lancia">LANCIA</a></li>
