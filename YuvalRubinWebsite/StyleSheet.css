@@ -53,6 +53,13 @@ header {
         color: #ff0000;
     }
 
+    .main_nav .login_logout {
+        margin-right: auto;
+        border: 1px solid black;
+        padding: 5px;
+    }
+
+
 
 .center {
     background-color: whitesmoke;

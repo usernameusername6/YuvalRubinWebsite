@@ -11,7 +11,6 @@
     </asp:ContentPlaceHolder>
 </head>
 <body>
-    <form id="form1" runat="server">
     <header>
 		<section class="header_top">				
 
@@ -29,6 +28,7 @@
 			<a href="90s.aspx">The 90s</a>
 			<p>|</p>
 			<a href="present.aspx">The Present</a>
+			<a class="login_logout" ID="LoginLogout" runat="server"></a>
 		</nav>
 	</header>
 		
@@ -52,7 +52,6 @@
 	<footer>
 			<a href="https://www.wrc.com" target="_blank">Official WRC site</a>
 	</footer>
-    </form>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>
 </body>
