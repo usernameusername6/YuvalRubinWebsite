@@ -19,8 +19,13 @@ public partial class Default2 : System.Web.UI.Page
 
             if (userType > 0)
             {
+
                 Session["userName"] = userName;
                 Session["isLoggedIn"] = true;
+
+                if (userType == 2)
+                    Session["isAdmin"] = true;
+
 
                 Response.Redirect("Default.aspx");
             }
@@ -35,6 +40,7 @@ public partial class Default2 : System.Web.UI.Page
     //returns:
     //0 - if user is not valid
     //1 - is user is valid
+    //2 - if user is admin
     private int GetUserTypeFromDB(string userName, string password)
     {
         string dbPath = this.MapPath("App_Data/Database.mdf");
@@ -48,6 +54,11 @@ public partial class Default2 : System.Web.UI.Page
 
         if (dt.Rows.Count == 1)
         {
+            DataRow row = dt.Rows[0];
+
+            if ((bool)row["is_admin"])
+                return 2;
+
             return 1;
         }
         else

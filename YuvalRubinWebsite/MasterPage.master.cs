@@ -25,12 +25,15 @@ public partial class MasterPage : System.Web.UI.MasterPage
         if ((bool)Session["isLoggedIn"])
         {
             LoginLogout.HRef = "Logout.aspx";
-            LoginLogout.InnerText = "שלום, " + Session["userName"] + "(לחץ ליציאה)";
+            LoginLogout.InnerText = "Logout";
+            ProfileArea.Visible = true;
+            profile.InnerText = Session["userName"].ToString();
         }
         else
         {
             LoginLogout.HRef = "Login.aspx";
-            LoginLogout.InnerText = "כניסה";
+            LoginLogout.InnerText = "Login";
+            ProfileArea.Visible = false;
         }
 
 

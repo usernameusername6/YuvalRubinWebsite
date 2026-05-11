@@ -28,7 +28,13 @@
 			<a href="90s.aspx">The 90s</a>
 			<p>|</p>
 			<a href="present.aspx">The Present</a>
-			<a class="login_logout" ID="LoginLogout" runat="server"></a>
+			<asp:PlaceHolder ID="ProfileArea" runat="server">
+				 <p>|</p>
+				<a href="profile.aspx" ID="profile" runat="server">Profile</a>
+			</asp:PlaceHolder>
+			
+			
+			
 		</nav>
 	</header>
 		
@@ -39,8 +45,14 @@
 				<asp:Image ID="DayImage" runat="server"/>
 			</section>
 
+
+
 			<asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
-    </asp:ContentPlaceHolder>
+			</asp:ContentPlaceHolder>
+
+			<section class="user_controls">
+				<br /> <a class="login_logout" ID="LoginLogout" runat="server"></a>
+			</section>
 		</aside>
 			
 		<main>

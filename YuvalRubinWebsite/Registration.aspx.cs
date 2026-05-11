@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -65,13 +66,18 @@ public partial class Registration : System.Web.UI.Page
 
         string lname = userName.Value;
 
-        if (lname.Length < 3 || lname.Length > 8)
+        if (lname.Length < 3)
         {
             RegistrationResult.InnerText += "שם משתמש חייב להכיל לפחות שני תווים. ";
             return false;
         }
+        else if (lname.Length > 10)
+        {
+            RegistrationResult.InnerText += "שם משתמש חייב להכיל פחות מעשרה תווים. ";
+            return false;
+        }
 
-        return true;
+            return true;
     }
 
     private bool Password_Validation()
@@ -165,22 +171,22 @@ public partial class Registration : System.Web.UI.Page
         string num = phone.Value;
         bool numberExist = true;
 
-        if (!(ID.Length == 10))
+        if (!(num.Length == 10))
         {
             RegistrationResult.InnerText += "מספר הטלפון חייב להיות באורך של 10 תווים.  ";
             return false;
         }
 
-        if (num[0] != 0)
+        if (num[0] != '0')
         {
             RegistrationResult.InnerText += "מספר הטלפון חייב לתחיל ב-0.  ";
             return false;
         }
 
-        for (int i = 0; i < ID.Length; i++)
+        for (int i = 0; i < num.Length; i++)
         {
             // בדיקת קיום מספרים
-            if (!(ID[i] >= '0' && ID[i] <= '9'))
+            if (!(num[i] >= '0' && num[i] <= '9'))
                 numberExist = false;
         }
 
@@ -232,7 +238,33 @@ public partial class Registration : System.Web.UI.Page
 
     private bool Insert_Into_Database()
     {
+        string dbPath = this.MapPath("App_Data/Database.mdf");
+        DAL dal = new DAL(dbPath);
+
+        string sqlQuery = "SELECT * FROM Users WHERE user_name = '" + userName.Value + "'";
+        DataTable dt = dal.GetDataTable(sqlQuery);
+
+        if (dt.Rows.Count > 0)
+        {
+            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            return false;
+        }
+
+        sqlQuery = "INSERT INTO Users VALUES (" +
+        "'" + firstName.Value + "', " +
+        "'" + lastName.Value + "', " +
+        "'" + userName.Value + "', " +
+        "'" + pswd.Value + "', " +
+        "'" + idNum.Value + "'," +
+        "'" + phone.Value + "'," +
+        "'" + mail.Value + "'," +
+        "'" + Request.Form["gender"] + "'," +
+        "'" + DateTime.Now.ToString("yyyy-MM-dd") + "', 0);";
+
+        dal.UpdateDB(sqlQuery);
+
         return true;
     }
+
 
 }
