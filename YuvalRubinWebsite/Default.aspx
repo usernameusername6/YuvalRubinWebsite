@@ -47,7 +47,7 @@
     <p>The Manufacturers Championship is for the car teams, or manufacturers, like Ford, Toyota, or Hyundai. Points are earned based on the results of the top-performing cars from each team in every rally. This 
         competition rewards the team that builds the most reliable and fastest cars throughout the season. Both championships run at the same time, so a driver could win the Drivers Championship while their 
         manufacturer might still be competing for the Manufacturers title.</p>
-    <a href="https://en.wikipedia.org/wiki/World_Rally_Championship" target="_blank">For more information about the WRC</a>
+    <a href="https://en.wikipedia.org/wiki/World_Rally_Championship" target="_blank" class="link">For more information about the WRC</a>
 </asp:Content>
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolderScript" Runat="Server">

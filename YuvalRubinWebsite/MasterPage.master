@@ -29,7 +29,7 @@
 			<p>|</p>
 			<a href="present.aspx">The Present</a>
 			<asp:PlaceHolder ID="ProfileArea" runat="server">
-				 <p>|</p>
+				<p>|</p>
 				<a href="profile.aspx" ID="profile" runat="server">Profile</a>
 			</asp:PlaceHolder>
 			
@@ -62,7 +62,9 @@
 	</section>
 			
 	<footer>
-			<a href="https://www.wrc.com" target="_blank">Official WRC site</a>
+			<a href="https://www.wrc.com" target="_blank" class="link">Official WRC site</a>
+			<p>© 2026 WRC Promoter GmbH</p>
+
 	</footer>
 	<asp:ContentPlaceHolder id="ContentPlaceHolderScript" runat="server">
     </asp:ContentPlaceHolder>

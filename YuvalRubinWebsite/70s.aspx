@@ -40,7 +40,7 @@
         allowfullscreen>
     </iframe>
     </div>
-        <a href="https://en.wikipedia.org/wiki/Lancia_Stratos" target="_blank">For more information about the LANCIA STRATOS</a>
+        <a href="https://en.wikipedia.org/wiki/Lancia_Stratos" target="_blank" class="link">For more information about the LANCIA STRATOS</a>
   
   
   <h2 id="drivers">The Drivers</h2>

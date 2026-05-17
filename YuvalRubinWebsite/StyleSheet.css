@@ -220,7 +220,6 @@ html {
     border-top: 1px solid #ccc;
     margin-top: 10px;
     text-align: center;
-    margin-top: auto;
 }
 
 .user_controls a {
@@ -230,9 +229,204 @@ html {
         color: #333;
         font-weight: bold;
         transition: color 0.3s;
-        font-size: 30px;
+        font-size: 20px;
 }
 
     .user_controls a:hover {
         color: #ff0000;
+    }
+
+.profile {
+    background-color: white;
+    padding: 30px;
+    margin: 40px auto;
+    max-width: 600px;
+    width: 100%;
+    font-size: 22px;
+    text-align: center;
+}
+
+    .profile td {
+        padding: 15px;
+        border-bottom: 1px solid #eee;
+    }
+
+
+.login {
+
+    
+  
+
+}
+
+.login {
+    text-align: center;
+    color: darkorange;
+    margin: 50px auto;
+    margin-bottom: 25px;
+    font-size: 32px;
+    padding: 40px;
+    max-width: 500px;
+}
+
+    .login label {
+        display: block; 
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 20px;
+        color: #333;
+    }
+
+    .login input[type="text"],
+    .login input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 18px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+
+
+    .login input[type="submit"] {
+        background-color: darkorange;
+        color: black;
+        border: none;
+        padding: 12px;
+        font-size: 20px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+        .login input[type="submit"]:hover {
+            background-color: orangered;
+            color: white;
+        }
+
+ 
+    .login .signup-btn {
+        background-color: #ddd;
+        color: #333;
+    }
+
+        .login .signup-btn:hover {
+            background-color: #bbb;
+        }
+
+.login-divider {
+    border: 0;
+    height: 1px;
+    background: #eee;
+    margin: 20px 0;
+}
+
+#ContentPlaceHolderMain_LoginResult,
+#LoginResult {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 18px;
+}
+
+
+.registration {
+    background-color: white;
+    padding: 40px;
+    margin: 50px auto;
+    max-width: 500px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    direction: ltr;
+    text-align: left;
+}
+
+
+    .registration label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #333;
+    }
+
+
+    .registration input[type="text"],
+    .registration input[type="password"] {
+        width: 100%;
+        padding: 12px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 16px;
+        box-sizing: border-box;
+        transition: border-color 0.3s;
+    }
+
+.radio-group, .checkbox-group {
+    margin-bottom: 25px;
+    padding: 12px;
+    background-color: whitesmoke;
+    border-radius: 8px;
+    border: 1px solid #eee;
+}
+
+
+.registration .inline-label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.registration .submit-btn {
+    background-color: darkorange;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+    .registration .submit-btn:hover {
+        background-color: orangered;
+        color: white;
+    }
+
+
+.result-message {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+
+.link {
+    color: black;
+    text-decoration: none;
+}
+
+
+    .link:visited {
+        color: black;
+    }
+
+
+    .link:hover {
+        color: orangered;
+        text-decoration: underline;
     }
