@@ -27,9 +27,8 @@ public partial class profile : System.Web.UI.Page
 
     private void LoadUserProfile(string username)
     {
-
-        string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\StudentH\source\repos\usernameusername6\YuvalRubinWebsite\YuvalRubinWebsite\App_Data\Database.mdf;Integrated Security=True";
-
+        
+        string connString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\Database.mdf;Integrated Security=True";
 
         string query = "SELECT user_name, first_name, last_name, mail , phone, gender, reg_date FROM Users WHERE user_name = @Username";
 
@@ -37,7 +36,6 @@ public partial class profile : System.Web.UI.Page
         {
             using (SqlCommand cmd = new SqlCommand(query, conn))
             {
-
                 cmd.Parameters.AddWithValue("@Username", username);
 
                 try
@@ -61,7 +59,10 @@ public partial class profile : System.Web.UI.Page
                     }
                     reader.Close();
                 }
-                catch (Exception) { }
+                catch (Exception ex)
+                {
+                    Response.Write("<h4 style='color:red;'>Database Error: " + ex.Message + "</h4>");
+                }
             }
         }
     }

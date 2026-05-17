@@ -46,7 +46,7 @@
 
   
   
-  <h2 id="heros">The Heroes of the 90s</h2>
+  <h2 id="heros">The Heroes</h2>
   <h3>Drivers of precision and passion</h3>
     <figure>
         <img src="images/mcrea.jpg" />

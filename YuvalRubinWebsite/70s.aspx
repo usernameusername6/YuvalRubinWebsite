@@ -34,8 +34,6 @@
         width="560" 
         height="315" 
         src="https://www.youtube.com/embed/P0GHtXWXOo8" 
-        title="Watch the STRATOS in action!" 
-        frameborder="0" 
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
         allowfullscreen>
     </iframe>

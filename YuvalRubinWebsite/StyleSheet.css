@@ -207,12 +207,9 @@ html {
 }
 
 
-.adminTable tr:nth-child(even) {
-    background-color: lightgray;
-}
 
 .adminTable, .adminTable th, .adminTable td {
-    border: 1px solid black;
+    border: 1px solid orange;
 }
 
 .user_controls {
@@ -430,3 +427,5 @@ html {
         color: orangered;
         text-decoration: underline;
     }
+
+

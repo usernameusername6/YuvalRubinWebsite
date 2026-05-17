@@ -9,7 +9,7 @@
         place on closed public roads. These races are held in different countries around the world, on a wide variety of surfaces like gravel, asphalt, snow, and dirt, making each event unique and challenging.</p>
     <figure>
     <img src="images/GRYarisSnow.jpg"/>
-    <figcaption>Toyota GR Yaris</figcaption>
+    <figcaption>Toyota GR Yaris Rally1</figcaption>
     </figure>
 
     <p> In the WRC, drivers not only race on special timed stages but also have to drive on regular roads between these stages, following normal traffic laws. Each rally lasts several days, and teams use
@@ -19,7 +19,7 @@
         Stage of each rally. Drivers and manufacturers collect points throughout the season to compete for the overall Drivers Championship and Manufacturers Championship.</p>
     <figure>
         <img src="images/i20NIce.jpg"/>
-        <figcaption>Hyundai I20N</figcaption>
+        <figcaption>Hyundai i20N Rally1</figcaption>
     </figure>
 
     <h2 id="rallying">Rallying</h2>
