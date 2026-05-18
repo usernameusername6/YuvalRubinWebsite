@@ -26,14 +26,14 @@ public partial class MasterPage : System.Web.UI.MasterPage
         {
             LoginLogout.HRef = "Logout.aspx";
             LoginLogout.InnerText = "Logout";
-            ProfileArea.Visible = true;
+            profileborder.Visible = true;
             profile.InnerText = Session["userName"].ToString();
         }
         else
         {
             LoginLogout.HRef = "Login.aspx";
             LoginLogout.InnerText = "Login";
-            ProfileArea.Visible = false;
+            profileborder.Visible = false;
         }
 
 

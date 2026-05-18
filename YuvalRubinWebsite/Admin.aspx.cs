@@ -73,14 +73,14 @@ public partial class Admin : System.Web.UI.Page
 
         str += "\t\t<form method=\"post\" action=\"Admin.aspx\">\n";
         str += "\t\t\t<input type=\"hidden\" id=\"userName\" name=\"userName\" value=\"" + row["user_name"].ToString() + "\"/>\n";
-        str += "\t\t\t<input type=\"submit\" name=\"delete\" value=\"Delete\"/>\n";
+        str += "\t\t\t<input type=\"submit\" name=\"delete\" value=\"Delete\" class=\"adminbutton\"/>\n";
         if (row["is_admin"].ToString() == "False")
         {
-            str += "\t\t\t<input type=\"submit\" name=\"setAdmin\" value=\"Set Admin\"/>\n";
+            str += "\t\t\t<input type=\"submit\" name=\"setAdmin\" value=\"Set Admin\" class=\"adminbutton\"/>\n";
         }
         else
         {
-            str += "\t\t\t<input type=\"submit\" name=\"resetAdmin\" value=\"Reset Admin\"/>\n";
+            str += "\t\t\t<input type=\"submit\" name=\"resetAdmin\" value=\"Reset Admin\" class=\"adminbutton\"/>\n";
         }
         str += "\t\t</form>\n";
         cell.InnerHtml = str;

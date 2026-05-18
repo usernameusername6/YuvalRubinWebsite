@@ -59,10 +59,7 @@ public partial class profile : System.Web.UI.Page
                     }
                     reader.Close();
                 }
-                catch (Exception ex)
-                {
-                    Response.Write("<h4 style='color:red;'>Database Error: " + ex.Message + "</h4>");
-                }
+                catch { }
             }
         }
     }

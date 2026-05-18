@@ -18,8 +18,6 @@
             <input type="submit" value="Submit" id="submit">
         </form>
         
-        <hr class="login-divider" />
-        
         <form method="get" action="Registration.aspx">      
             <input type="submit" value="Signup" class="signup-btn" />
         </form>

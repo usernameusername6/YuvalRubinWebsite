@@ -29,15 +29,7 @@
         manufacturers’ titles from 1974 to 1976, showing just how dominant it was during that era, and it became one of the most iconic and recognizable rally cars ever built.
     </p>
     <h2>Watch the Stratos in action!</h2>
-    <div class="video-container">
-    <iframe 
-        width="560" 
-        height="315" 
-        src="https://www.youtube.com/embed/P0GHtXWXOo8" 
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-        allowfullscreen>
-    </iframe>
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/P0GHtXWXOo8" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <a href="https://en.wikipedia.org/wiki/Lancia_Stratos" target="_blank" class="link">For more information about the LANCIA STRATOS</a>
   
   

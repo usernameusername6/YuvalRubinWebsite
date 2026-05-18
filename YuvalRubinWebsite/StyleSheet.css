@@ -50,13 +50,7 @@ header {
         display: block;
     }
     .main_nav a:hover {
-        color: #ff0000;
-    }
-
-    .main_nav .login_logout {
-        margin-right: auto;
-        border: 1px solid black;
-        padding: 5px;
+        color: red;
     }
 
 
@@ -81,6 +75,7 @@ main {
     text-align: center;
     margin-left: 10px 200px;
     border-bottom-right-radius: 15px;
+    align-items: center;
 }
 
     main h2 {
@@ -109,7 +104,6 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 10px;
-    border-bottom: 1px solid #ccc;
     margin-bottom: 15px;
 }
 
@@ -120,27 +114,12 @@ footer {
 }
 
 #DayImage {
-    max-width: 300px;
-    height: auto;
-    display: block;
-}
-.video-container {
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-    margin-bottom: 20px;
+    width: 300px;
 }
 
-    .video-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        border: 0;
-        border-radius: 15px;
-    }
+main iframe {
+    display: block;
+}
 
 figure {
     display: inline-block;
@@ -150,16 +129,20 @@ figure {
 
 figcaption {
     font-size: 11px;
-    color: #555;
+    color: lightslategray;
     margin-top: 8px; 
-    line-height: 1.2;
 }
 
 figure img {
     border-radius: 15px;
     display: block;
-    max-width: 100%;
     width: 600px;
+}
+
+main iframe {
+    display: block;
+    margin: 30px auto;
+    border-radius: 15px;
 }
 
 
@@ -172,16 +155,13 @@ figure img {
 .page-nav li {
     margin-bottom: 10px;
     padding: 10px 0;
-    border-bottom: 3px solid #ddd;
+    border-bottom: 1px solid lightgray;
 }
 
-    .page-nav li:last-child {
-        border-bottom: none;
-    }
 
 .page-nav a {
     text-decoration: none;
-    color: #333;
+    color: black;
     font-weight: bold;
     transition: color 0.3s;
     font-size: 25px;
@@ -189,7 +169,7 @@ figure img {
 }
 
     .page-nav a:hover {
-        color: #ff0000;
+        color: orangered;
     }
 
 
@@ -199,7 +179,6 @@ aside {
     display: flex;
     flex-direction: column;
     height: 100%;
-    min-height: 400px;
 }
 
 html {
@@ -209,139 +188,82 @@ html {
 
 
 .adminTable, .adminTable th, .adminTable td {
-    border: 1px solid orange;
+    border: 5px solid orange;
 }
 
-.user_controls {
-    padding: 15px;
-    border-top: 1px solid #ccc;
-    margin-top: 10px;
+.login_logout {
     text-align: center;
+    display: block;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s;
+    font-size: 20px;
+    text-decoration: none;
 }
 
-.user_controls a {
-        display: block;
-        padding: 5px 0;
-        text-decoration: none;
-        color: #333;
-        font-weight: bold;
-        transition: color 0.3s;
-        font-size: 20px;
-}
 
-    .user_controls a:hover {
-        color: #ff0000;
+    .login_logout:hover {
+        color: orangered;
     }
 
 .profile {
-    background-color: white;
     padding: 30px;
     margin: 40px auto;
-    max-width: 600px;
-    width: 100%;
-    font-size: 22px;
+    font-size: 20px;
     text-align: center;
 }
 
-    .profile td {
-        padding: 15px;
-        border-bottom: 1px solid #eee;
-    }
 
-
-.login {
-
-    
-  
-
-}
 
 .login {
     text-align: center;
-    color: darkorange;
     margin: 50px auto;
-    margin-bottom: 25px;
     font-size: 32px;
     padding: 40px;
     max-width: 500px;
 }
 
     .login label {
-        display: block; 
+        display: block;
         font-weight: bold;
         margin-bottom: 8px;
-        font-size: 20px;
-        color: #333;
+        font-size: 18px;
+        color: black;
     }
 
     .login input[type="text"],
     .login input[type="password"] {
-        width: 100%;
+        width: 400px;
         padding: 12px;
         margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
         font-size: 18px;
-        box-sizing: border-box;
-        transition: border-color 0.3s;
     }
 
 
 
     .login input[type="submit"] {
         background-color: darkorange;
-        color: black;
         border: none;
         padding: 12px;
         font-size: 20px;
         border-radius: 8px;
-        cursor: pointer;
         font-weight: bold;
-        transition: background-color 0.3s, color 0.3s;
-        width: 100%;
-        margin-bottom: 10px;
+        transition: background-color 0.3s;
+        width: 200px;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
         .login input[type="submit"]:hover {
             background-color: orangered;
-            color: white;
         }
-
- 
-    .login .signup-btn {
-        background-color: #ddd;
-        color: #333;
-    }
-
-        .login .signup-btn:hover {
-            background-color: #bbb;
-        }
-
-.login-divider {
-    border: 0;
-    height: 1px;
-    background: #eee;
-    margin: 20px 0;
-}
-
-#ContentPlaceHolderMain_LoginResult,
-#LoginResult {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 15px;
-    font-size: 18px;
-}
-
 
 .registration {
-    background-color: white;
-    padding: 40px;
+    text-align: center;
     margin: 50px auto;
+    font-size: 32px;
+    padding: 40px;
     max-width: 500px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    direction: ltr;
-    text-align: left;
 }
 
 
@@ -350,66 +272,41 @@ html {
         font-weight: bold;
         margin-bottom: 8px;
         font-size: 18px;
-        color: #333;
+        color: black;
     }
 
 
-    .registration input[type="text"],
-    .registration input[type="password"] {
-        width: 100%;
-        padding: 12px;
-        margin-bottom: 20px;
-        border: 1px solid #ccc;
-        border-radius: 8px;
-        font-size: 16px;
-        box-sizing: border-box;
-        transition: border-color 0.3s;
-    }
-
-.radio-group, .checkbox-group {
-    margin-bottom: 25px;
+.registration input[type="text"],
+.registration input[type="password"] {
+    width: 400px;
     padding: 12px;
-    background-color: whitesmoke;
-    border-radius: 8px;
-    border: 1px solid #eee;
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 
 .registration .inline-label {
     display: inline;
-    font-weight: normal;
-    margin-right: 20px;
-    margin-left: 5px;
-    cursor: pointer;
+    margin:15px;
 }
 
 .registration .submit-btn {
     background-color: darkorange;
-    color: black;
     border: none;
-    padding: 15px;
-    font-size: 22px;
+    padding: 12px;
+    font-size: 20px;
     border-radius: 8px;
-    cursor: pointer;
     font-weight: bold;
-    transition: background-color 0.3s, color 0.3s;
-    width: 100%;
-    margin-top: 10px;
+    transition: background-color 0.3s;
+    width: 200px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-    .registration .submit-btn:hover {
+.registration .submit-btn:hover {
         background-color: orangered;
-        color: white;
-    }
-
-
-.result-message {
-    color: red;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    font-size: 18px;
 }
+
 
 
 .link {
@@ -428,4 +325,12 @@ html {
         text-decoration: underline;
     }
 
-
+.adminbutton {
+    background-color: darkorange;
+    border: none;
+    font-size: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    width: 80px;
+    height: 25px;
+}

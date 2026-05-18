@@ -28,9 +28,9 @@
 			<a href="90s.aspx">The 90s</a>
 			<p>|</p>
 			<a href="present.aspx">The Present</a>
-			<asp:PlaceHolder ID="ProfileArea" runat="server">
+			<asp:PlaceHolder id="profileborder" runat="server">
 				<p>|</p>
-				<a href="profile.aspx" ID="profile" runat="server">Profile</a>
+				<a href="profile.aspx" id="profile" runat="server">Profile</a>
 			</asp:PlaceHolder>
 			
 			
@@ -50,9 +50,7 @@
 			<asp:ContentPlaceHolder id="ContentPlaceHolderAside" runat="server">
 			</asp:ContentPlaceHolder>
 
-			<section class="user_controls">
 				<br /> <a class="login_logout" ID="LoginLogout" runat="server"></a>
-			</section>
 		</aside>
 			
 		<main>

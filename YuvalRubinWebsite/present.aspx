@@ -4,7 +4,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolderAside" Runat="Server">
         <div class="page-nav">
-        <h1>THE PRESENT</h1>
+        <h1>The Present</h1>
         <ul>
             <li><a href="#newera">The New Era</a></li>
             <li><a href="#toyota">TOYOTA</a></li>
@@ -45,15 +45,7 @@
         of the reformed championship, and cementing the GR Yaris Rally1 as one of the most formidable rally cars ever built.
     </p>
     <h2>2025 WRC Highlights</h2>
-    <div class="video-container">
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/GDz0spcl_TY"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
-    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/GDz0spcl_TY" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <a href="https://toyotagazooracing.com/" target="_blank" class="link">For more information about the TOYOTA GR Team</a>
 
 
