@@ -36,6 +36,15 @@ public partial class MasterPage : System.Web.UI.MasterPage
             profileborder.Visible = false;
         }
 
+        if ((bool)Session["isAdmin"])
+        {
+            admin.Visible = true;
+        }
+        else
+        {
+            admin.Visible = false;
+        }
+
 
 
     }

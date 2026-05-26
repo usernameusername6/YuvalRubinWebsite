@@ -4,7 +4,7 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <title>RallyMe</title>
     <link rel="stylesheet" type="text/css" href="StyleSheet.css" />
     <meta charset="utf-8" />
     <asp:ContentPlaceHolder id="head" runat="server">
@@ -30,7 +30,7 @@
 			<a href="present.aspx">The Present</a>
 			<asp:PlaceHolder id="profileborder" runat="server">
 				<p>|</p>
-				<a href="profile.aspx" id="profile" runat="server">Profile</a>
+				<a href="profile.aspx" id="profile" runat="server">profile</a>
 			</asp:PlaceHolder>
 			
 			
@@ -51,6 +51,7 @@
 			</asp:ContentPlaceHolder>
 
 				<br /> <a class="login_logout" ID="LoginLogout" runat="server"></a>
+				<a href="Admin.aspx" id="admin" runat="server">Admin</a>
 		</aside>
 			
 		<main>

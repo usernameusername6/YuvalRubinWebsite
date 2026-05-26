@@ -17,7 +17,7 @@ public partial class Registration : System.Web.UI.Page
             if (Form_Validation() && Insert_Into_Database())
             {
                 RegistrationResult.InnerText =
-                        firstName.Value + ", רישום מוצלח, יש לעבור לדף הכניסה.";
+                        firstName.Value + "Signup complete.";
             }
         }
     }

@@ -191,7 +191,7 @@ html {
     border: 5px solid orange;
 }
 
-.login_logout {
+.login_logout, #admin {
     text-align: center;
     display: block;
     color: black;
@@ -202,9 +202,13 @@ html {
 }
 
 
-    .login_logout:hover {
+    .login_logout:hover, #admin:hover {
         color: orangered;
     }
+
+#admin {
+    margin-top: 15px;
+}
 
 .profile {
     padding: 30px;

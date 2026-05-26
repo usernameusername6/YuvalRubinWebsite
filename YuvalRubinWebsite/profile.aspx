@@ -10,32 +10,32 @@
         
       <table class="profile">
             <tr>
-                <td><strong>Username:</strong></td>
-                <td><asp:Label ID="lblUsername" runat="server"></asp:Label></td>
+                <td>Username:</td>
+                <td><asp:Label ID="Username" runat="server"></asp:Label></td>
             </tr>
             <tr>
-                <td><strong>First Name:</strong></td>
-                <td><asp:Label ID="lblFirstName" runat="server"></asp:Label></td>
+                <td>First Name:</td>
+                <td><asp:Label ID="FirstName" runat="server"></asp:Label></td>
             </tr>
             <tr>
-                <td><strong>Last Name:</strong></td>
-                <td><asp:Label ID="lblLastName" runat="server"></asp:Label></td>
+                <td>Last Name:</td>
+                <td><asp:Label ID="LastName" runat="server"></asp:Label></td>
             </tr>
             <tr>
-                <td><strong>Email:</strong></td>
-                <td><asp:Label ID="lblEmail" runat="server"></asp:Label></td>
+                <td>Email:</td>
+                <td><asp:Label ID="Email" runat="server"></asp:Label></td>
             </tr>
              <tr>
-                <td><strong>Phone:</strong></td>
-                <td><asp:Label ID="lblPhone" runat="server"></asp:Label></td>
+                <td>Phone:</td>
+                <td><asp:Label ID="Phone" runat="server"></asp:Label></td>
             </tr>
                          <tr>
-                <td><strong>Gender:</strong></td>
-                <td><asp:Label ID="lblGender" runat="server"></asp:Label></td>
+                <td>Gender:</td>
+                <td><asp:Label ID="Gender" runat="server"></asp:Label></td>
             </tr>
                          <tr>
-                <td><strong>Registration date:</strong></td>
-                <td><asp:Label ID="lblReg" runat="server"></asp:Label></td>
+                <td>Registration date:</td>
+                <td><asp:Label ID="Reg" runat="server"></asp:Label></td>
             </tr>
         </table>
 </asp:Content>

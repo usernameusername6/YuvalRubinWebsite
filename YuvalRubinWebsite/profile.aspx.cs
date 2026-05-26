@@ -45,19 +45,14 @@ public partial class profile : System.Web.UI.Page
 
                     if (reader.Read())
                     {
-                        lblUsername.Text = reader["user_name"].ToString();
-                        lblFirstName.Text = reader["first_name"].ToString();
-                        lblLastName.Text = reader["last_name"].ToString();
-                        lblEmail.Text = reader["mail"].ToString();
-                        lblPhone.Text = reader["phone"].ToString();
-                        lblGender.Text = reader["gender"].ToString();
-                        lblReg.Text = Convert.ToDateTime(reader["reg_date"]).ToString("dd/MM/yyyy");
+                        Username.Text = reader["user_name"].ToString();
+                        FirstName.Text = reader["first_name"].ToString();
+                        LastName.Text = reader["last_name"].ToString();
+                        Email.Text = reader["mail"].ToString();
+                        Phone.Text = reader["phone"].ToString();
+                        Gender.Text = reader["gender"].ToString();
+                        Reg.Text = Convert.ToDateTime(reader["reg_date"]).ToString("dd/MM/yyyy");
                     }
-                    else
-                    {
-                        lblUsername.Text = "User not found.";
-                    }
-                    reader.Close();
                 }
                 catch { }
             }
