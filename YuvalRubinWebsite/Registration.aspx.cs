@@ -41,7 +41,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (fname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם פרטי חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "First name must be at least two letters. ";
             return false;
         }
 
@@ -54,7 +54,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (lname.Length < 2)
         {
-            RegistrationResult.InnerText += "שם משפחה חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "Last name must be at least two letters. ";
             return false;
         }
 
@@ -68,12 +68,12 @@ public partial class Registration : System.Web.UI.Page
 
         if (lname.Length < 3)
         {
-            RegistrationResult.InnerText += "שם משתמש חייב להכיל לפחות שני תווים. ";
+            RegistrationResult.InnerText += "User name must be at least two letters. ";
             return false;
         }
         else if (lname.Length > 10)
         {
-            RegistrationResult.InnerText += "שם משתמש חייב להכיל פחות מעשרה תווים. ";
+            RegistrationResult.InnerText += "User name must be less then two letters. ";
             return false;
         }
 
@@ -88,7 +88,7 @@ public partial class Registration : System.Web.UI.Page
         // קוד שמוודא שהסיסמה בין 6 ל-10 תווים בלבד
         if (password.Length < 6 || password.Length > 10)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל בין 6 ל-10 תווים. ";
+            RegistrationResult.InnerText += "Password must be between six to ten characters. ";
             return false;
         }
 
@@ -106,14 +106,14 @@ public partial class Registration : System.Web.UI.Page
         }
         if (!letterExist || !numberExist)
         {
-            RegistrationResult.InnerText += "הסיסמה חייבת להכיל אותיות ומספרים. ";
+            RegistrationResult.InnerText += "Password must contain letters and numbers. ";
             return false;
         }
 
         // קוד לוידוא סיסמה ווידוא סיסמה זהים
         if (password != pswdV)
         {
-            RegistrationResult.InnerText += "הסיסמה ווידוא הסיסמה אינם זהים. ";
+            RegistrationResult.InnerText += "Make sure that both passwords match. ";
             return false;
         }
 
@@ -137,7 +137,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (!(ID.Length == 9))
         {
-            RegistrationResult.InnerText += "תעודת הזהות חייבת להיות באורך של 9 תווים.  ";
+            RegistrationResult.InnerText += "ID Must be nine characters long.  ";
             return false;
         }
 
@@ -150,7 +150,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (!numberExist)
         {
-            RegistrationResult.InnerText += "תעודת הזהות חייבת להכיל רק מספרים.  ";
+            RegistrationResult.InnerText += "ID Must contain only numbers.  ";
             return false;
         }
 
@@ -173,13 +173,13 @@ public partial class Registration : System.Web.UI.Page
 
         if (!(num.Length == 10))
         {
-            RegistrationResult.InnerText += "מספר הטלפון חייב להיות באורך של 10 תווים.  ";
+            RegistrationResult.InnerText += "Phone number must be ten characters long.  ";
             return false;
         }
 
         if (num[0] != '0')
         {
-            RegistrationResult.InnerText += "מספר הטלפון חייב לתחיל ב-0.  ";
+            RegistrationResult.InnerText += "Phone number must start with a 0.  ";
             return false;
         }
 
@@ -192,7 +192,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (!numberExist)
         {
-            RegistrationResult.InnerText += "מספר הטלפון חייב להכיל רק מספרים.  ";
+            RegistrationResult.InnerText += "Phone number must contain only numbers.  ";
             return false;
         }
 
@@ -218,7 +218,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (AtIndex == -1 || DotIndex == -1 || DotIndex < AtIndex)
         {
-            RegistrationResult.InnerText += "כתובת האימייל שגויה.  ";
+            RegistrationResult.InnerText += "Email adrress is false.  ";
             return false;
         }
 
@@ -229,7 +229,7 @@ public partial class Registration : System.Web.UI.Page
     {
         if (!approval.Checked)
         {
-            RegistrationResult.InnerText += "יש לאשר את תקנון האתר. ";
+            RegistrationResult.InnerText += "You must confirm the Terms and Conditions. ";
             return false;
         }
 
@@ -246,7 +246,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (dt.Rows.Count > 0)
         {
-            RegistrationResult.InnerText = "שם משתמש קיים במערכת. אנא בחר.י שם אחר.";
+            RegistrationResult.InnerText = "User name is already found in the system.";
             return false;
         }
 
