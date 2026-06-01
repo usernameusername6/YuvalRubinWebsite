@@ -64,16 +64,16 @@ public partial class Registration : System.Web.UI.Page
     private bool User_Name_Validation()
     {
 
-        string lname = userName.Value;
+        string UserName = userName.Value;
 
-        if (lname.Length < 3)
+        if (UserName.Length < 3)
         {
-            RegistrationResult.InnerText += "User name must be at least two letters. ";
+            RegistrationResult.InnerText += "User name must be at least three letters. ";
             return false;
         }
-        else if (lname.Length > 10)
+        else if (UserName.Length > 8)
         {
-            RegistrationResult.InnerText += "User name must be less then two letters. ";
+            RegistrationResult.InnerText += "User name must be eight letters or less. ";
             return false;
         }
 
@@ -218,7 +218,7 @@ public partial class Registration : System.Web.UI.Page
 
         if (AtIndex == -1 || DotIndex == -1 || DotIndex < AtIndex)
         {
-            RegistrationResult.InnerText += "Email adrress is false.  ";
+            RegistrationResult.InnerText += "Email address is false.  ";
             return false;
         }
 
